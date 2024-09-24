@@ -42,7 +42,8 @@ public class Stack
 
     public void display() 
     {
-        if (top == -1) {
+        if (top == -1) 
+        {
             System.out.println("There is no element in the stack");
             return;
         }

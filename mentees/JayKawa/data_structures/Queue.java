@@ -14,8 +14,8 @@ public class Queue
             System.out.println("Overflow of queue\n");
             return;
         } 
-        else if 
-        (f == -1 && r == -1) {
+        else if (f == -1 && r == -1) 
+        {
             f = 0;
             r = 0;
             a[r] = x;
