@@ -1,0 +1,21 @@
+import os
+import sys
+
+# Creating an absolute path to the recursion folder code is written, To avoid OS syntax issue.
+current_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.abspath(os.path.join(current_dir, '..'))
+algorithms_dir = os.path.join(root_dir, 'algorithms', 'two_pointer')
+
+sys.path.append(algorithms_dir)
+
+from remove_duplicates import removeDuplicates
+
+# Test case 1:
+nums = [1,1,2]
+print("Number of unique elements: ", removeDuplicates(nums))
+
+
+# Test case 2:
+nums = [0,0,1,1,1,2,2,3,3,4]
+print("Number of unique elements: ", removeDuplicates(nums))
+
