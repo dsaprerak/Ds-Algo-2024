@@ -20,17 +20,4 @@
 // 2. 1 step + 2 steps
 // 3. 2 steps + 1 step
 
-function climbingSteps(n) {
-    if (n >= 0) {
-        if (n === 0) return 1
-        return climbingSteps(n-1) + climbingSteps(n-2)
-    }
-    return 0
-}
-
-function main() {
-    const n = 44
-    return climbingSteps(n)
-}
-
-console.log(main())
+// not able to solve this problem 
